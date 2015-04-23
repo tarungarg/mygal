@@ -24,6 +24,7 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'paperclip', github: 'thoughtbot/paperclip' 
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro", ">= 1.1.0"
+gem 'devise'
 
 
 # Use ActiveModel has_secure_password
