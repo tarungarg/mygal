@@ -26,6 +26,8 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro", ">= 1.1.0"
 gem 'devise'
 
+gem 'rails_admin'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
