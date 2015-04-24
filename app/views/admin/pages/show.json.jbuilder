@@ -1,0 +1,1 @@
+json.extract! @page, :about, :event, :sitemap, :contact, :created_at, :updated_at

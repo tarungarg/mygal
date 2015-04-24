@@ -1,0 +1,33 @@
+<h1>Listing pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>About</th>
+      <th>Event</th>
+      <th>Sitemap</th>
+      <th>Contact</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td><%= page.about %></td>
+        <td><%= page.event %></td>
+        <td><%= page.sitemap %></td>
+        <td><%= page.contact %></td>
+        <td><%= link_to 'Show', [:admin, page] %></td>
+        <td><%= link_to 'Edit', edit_admin_page_path(page) %></td>
+        <td><%= link_to 'Destroy', [:admin, page], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Page', new_admin_page_path %>
