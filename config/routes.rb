@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :listings do
-    resources :orders
+    resources :orders, only: [:new, :create]
   end
-  
+
   get 'pages/about'
 
   get 'pages/event'
@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   get 'seller' => "listings#seller"
+
+  get 'purchases' => "orders#purchases"
 
   root 'listings#index'
 
